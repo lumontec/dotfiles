@@ -10,4 +10,7 @@
   "clangd.path": "/home/crash/.config/coc/extensions/coc-clangd-data/install/11.0.0/clangd_11.0.0/bin/clangd",
   "clangd.arguments": ["--log=verbose", "--background-index", "--clang-tidy"],
   "clangd.enabled": true
+  "eslint.packageManager": "yarn",
+  "eslint.nodePath": ".yarn/sdks",
+  "workspace.workspaceFolderCheckCwd": false,
 }

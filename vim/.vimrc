@@ -35,7 +35,7 @@ call plug#end()
 
 " -- COC EXTENSIONS
 "
-let g:coc_global_extensions = ['coc-pyright', 'coc-yaml', 'coc-go']
+let g:coc_global_extensions = ['coc-pyright', 'coc-yaml', 'coc-go', 'coc-tsserver']
 
 
 " -- CONFIGURATIONS 
