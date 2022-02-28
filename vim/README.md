@@ -1,15 +1,5 @@
 ### how to use
 
-Install vim from source:
-```bash
-git clone https://github.com/vim/vim.git
-# checkout specific release tag
-git checkout "v8.2.3336"
-cd vim
-./configure
-make -j8
-sudo make install
-```
 
 Install vim-plug:
 ```bash
@@ -23,7 +13,7 @@ cp .vimrc ~/.vimrc
 cp coc-settings.json ~/.vim/coc-settings.json
 ```
 
-PlugInstall the Plugins  
+Optional: PlugInstall other Plugins  
 
 ```bash
 PlugInstall
@@ -48,4 +38,15 @@ Tested coc-extenstions
    + coc-yaml 1.4.2 ~/.config/coc/extensions/node_modules/coc-yaml
 ```
 
+PS: Install vim from source:
+
+```bash
+git clone https://github.com/vim/vim.git
+# checkout specific release tag
+git checkout "v8.2.3336"
+cd vim
+./configure
+make -j8
+sudo make install
+```
 
