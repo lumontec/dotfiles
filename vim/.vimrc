@@ -27,7 +27,7 @@ Plug 'ojroques/vim-oscyank'
 
 "" fzf
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-"Plug 'junegunn/fzf.vim'
+Plug 'junegunn/fzf.vim'
 
 " Initialize plugin system
 call plug#end()
