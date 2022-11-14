@@ -104,6 +104,7 @@ nnoremap <C-f> :Rg!
 map <silent> <C-t> :NERDTreeToggle<CR>
 
 "" Remap yank to Ocsyank for no-clipboard copy
+" vnoremap ye "+y
 vnoremap ye :OSCYank<CR>
 
 " -- STYLES
