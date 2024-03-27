@@ -153,6 +153,14 @@ endfunction
 noremap <F5> :call YankFileLine()<CR>:OSCYankRegister 0<CR>
 
 "
+" search fzf word under cursor
+function SearchWord()
+    let l:Command = expand("<cword>")
+       execute "Rg!" . l:Command
+endfunction
+nnoremap <C-s> :call SearchWord()<CR>
+
+"
 " toggle coc
 function! CocToggle()
     if g:coc_enabled
