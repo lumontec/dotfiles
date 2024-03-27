@@ -158,7 +158,7 @@ function SearchWord()
     let l:Command = expand("<cword>")
        execute "Rg!" . l:Command
 endfunction
-nnoremap <C-s> :call SearchWord()<CR>
+nnoremap <C-w> :call SearchWord()<CR>
 
 "
 " toggle coc
