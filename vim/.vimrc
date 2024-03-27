@@ -105,7 +105,7 @@ map <silent> <C-t> :NERDTreeToggle<CR>
 
 "" Remap yank to Ocsyank for no-clipboard copy
 " vnoremap ye "+y
-vnoremap ye :OSCYank<CR>
+vnoremap ye :OSCYankVisual<CR>
 
 " -- STYLES
 "  
@@ -157,7 +157,7 @@ function! YankFileLine()
 "    let @* = fileline
     let @0 = fileline
 endfunction
-noremap <F5> :call YankFileLine()<CR>:OSCYankReg 0<CR>
+noremap <F5> :call YankFileLine()<CR>:OSCYankRegister 0<CR>
 
 "
 " toggle coc
@@ -170,4 +170,3 @@ function! CocToggle()
 endfunction
 " Remap toggle everything
 silent! map <F10> :set invnumber<CR> :call CocToggle()<CR>
-
