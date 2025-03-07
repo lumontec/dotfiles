@@ -1,0 +1,22 @@
+# Go
+GOBIN=/usr/local/go/bin
+
+# Conda
+CONDABIN="$HOME/miniconda3/bin"
+
+# Append all paths to go
+export PATH=$GOBIN:$CONDABIN:$PATH
+
+source /mnt/nvme/home/radxa/miniconda3/etc/profile.d/conda.sh
+# If inside a Conda environment, activate the same environment in new shells
+if [ -n "$CONDA_DEFAULT_ENV" ]; then
+    conda activate "$CONDA_DEFAULT_ENV"
+fi
+
+
+alias nvim='VIMRUNTIME=/mnt/nvme/home/radxa/.local/share/nvim/runtime nvim'
+export PATH=/mnt/nvme/home/radxa/.local/bin:$PATH
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
